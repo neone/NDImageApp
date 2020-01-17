@@ -13,6 +13,7 @@
 		D962B11A23D1F03100FC5386 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D962B11823D1F03100FC5386 /* Main.storyboard */; };
 		D962B11C23D1F03200FC5386 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D962B11B23D1F03200FC5386 /* Assets.xcassets */; };
 		D962B11F23D1F03200FC5386 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D962B11D23D1F03200FC5386 /* LaunchScreen.storyboard */; };
+		D978EF7523D211B40027938E /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D962B12723D1F45E00FC5386 /* UIViewX.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		D962B12823D1F49B00FC5386 /* NDImagePickerFramework */ = {
 			isa = PBXGroup;
 			children = (
+				D978EF7623D219A60027938E /* New Group */,
 			);
 			path = NDImagePickerFramework;
 			sourceTree = "<group>";
@@ -91,6 +93,13 @@
 				D962B12023D1F03200FC5386 /* Info.plist */,
 			);
 			path = "Example App";
+			sourceTree = "<group>";
+		};
+		D978EF7623D219A60027938E /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D962B11723D1F03100FC5386 /* ViewController.swift in Sources */,
+				D978EF7523D211B40027938E /* UIViewX.swift in Sources */,
 				D962B11323D1F03100FC5386 /* AppDelegate.swift in Sources */,
 				D962B11523D1F03100FC5386 /* SceneDelegate.swift in Sources */,
 			);
