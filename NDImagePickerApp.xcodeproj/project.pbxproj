@@ -108,7 +108,7 @@
 		D962B10623D1F03100FC5386 = {
 			isa = PBXGroup;
 			children = (
-				D962B11123D1F03100FC5386 /* NDImagePicker */,
+				D962B11123D1F03100FC5386 /* NDImagePickerApp */,
 				D962B11023D1F03100FC5386 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -121,7 +121,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D962B11123D1F03100FC5386 /* NDImagePicker */ = {
+		D962B11123D1F03100FC5386 /* NDImagePickerApp */ = {
 			isa = PBXGroup;
 			children = (
 				D978EF7823D219E70027938E /* NDImagePickerFramework */,
@@ -129,7 +129,7 @@
 				D962B12923D1F4BD00FC5386 /* Example App */,
 				D962B12623D1F43900FC5386 /* Utilities */,
 			);
-			path = NDImagePicker;
+			path = NDImagePickerApp;
 			sourceTree = "<group>";
 		};
 		D962B12623D1F43900FC5386 /* Utilities */ = {
