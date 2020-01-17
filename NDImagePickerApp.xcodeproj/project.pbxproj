@@ -124,10 +124,10 @@
 		D962B11123D1F03100FC5386 /* NDImagePickerApp */ = {
 			isa = PBXGroup;
 			children = (
-				D978EF7823D219E70027938E /* NDImagePickerFramework */,
 				D962B11D23D1F03200FC5386 /* LaunchScreen.storyboard */,
 				D962B12923D1F4BD00FC5386 /* Example App */,
 				D962B12623D1F43900FC5386 /* Utilities */,
+				D978EF7823D219E70027938E /* NDImagePickerFramework */,
 			);
 			path = NDImagePickerApp;
 			sourceTree = "<group>";
@@ -169,8 +169,8 @@
 		D978EF7823D219E70027938E /* NDImagePickerFramework */ = {
 			isa = PBXGroup;
 			children = (
-				D978EF7723D219DF0027938E /* QCropper */,
 				D978F02F23D228C40027938E /* NDImagePickerViewController.swift */,
+				D978EF7723D219DF0027938E /* QCropper */,
 			);
 			path = NDImagePickerFramework;
 			sourceTree = "<group>";
@@ -502,7 +502,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 77YXYQDT3J;
-				INFOPLIST_FILE = "$(SRCROOT)/NDImagePicker/Example App/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/NDImagePickerApp/Example App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -520,7 +520,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 77YXYQDT3J;
-				INFOPLIST_FILE = "$(SRCROOT)/NDImagePicker/Example App/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/NDImagePickerApp/Example App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
