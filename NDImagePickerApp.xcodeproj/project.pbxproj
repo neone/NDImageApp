@@ -46,10 +46,11 @@
 		D978F02C23D220130027938E /* Rotatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978EFF923D21A020027938E /* Rotatable.swift */; };
 		D978F02D23D220130027938E /* AngleAssist.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978EFFA23D21A020027938E /* AngleAssist.swift */; };
 		D978F02E23D220130027938E /* AspectRatioSettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978EFFB23D21A020027938E /* AspectRatioSettable.swift */; };
+		D978F03023D228C40027938E /* NDImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978F02F23D228C40027938E /* NDImagePickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D962B10F23D1F03100FC5386 /* NDImagePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NDImagePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D962B10F23D1F03100FC5386 /* NDImagePickerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NDImagePickerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D962B11223D1F03100FC5386 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D962B11423D1F03100FC5386 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D962B11623D1F03100FC5386 /* NDImagePickerAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDImagePickerAppViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +91,7 @@
 		D978F00C23D21A200027938E /* QCropper.flip.horizontal.fill@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QCropper.flip.horizontal.fill@3x.png"; sourceTree = "<group>"; };
 		D978F00D23D21A200027938E /* QCropper.flip.horizontal.fill@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QCropper.flip.horizontal.fill@2x.png"; sourceTree = "<group>"; };
 		D978F00E23D21B450027938E /* UIButtonX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonX.swift; sourceTree = "<group>"; };
+		D978F02F23D228C40027938E /* NDImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDImagePickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +116,7 @@
 		D962B11023D1F03100FC5386 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D962B10F23D1F03100FC5386 /* NDImagePicker.app */,
+				D962B10F23D1F03100FC5386 /* NDImagePickerApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,7 +124,7 @@
 		D962B11123D1F03100FC5386 /* NDImagePicker */ = {
 			isa = PBXGroup;
 			children = (
-				D978EF7823D219E70027938E /* NDImagePickerFramerwork */,
+				D978EF7823D219E70027938E /* NDImagePickerFramework */,
 				D962B11D23D1F03200FC5386 /* LaunchScreen.storyboard */,
 				D962B12923D1F4BD00FC5386 /* Example App */,
 				D962B12623D1F43900FC5386 /* Utilities */,
@@ -164,12 +166,13 @@
 			path = QCropper;
 			sourceTree = "<group>";
 		};
-		D978EF7823D219E70027938E /* NDImagePickerFramerwork */ = {
+		D978EF7823D219E70027938E /* NDImagePickerFramework */ = {
 			isa = PBXGroup;
 			children = (
 				D978EF7723D219DF0027938E /* QCropper */,
+				D978F02F23D228C40027938E /* NDImagePickerViewController.swift */,
 			);
-			path = NDImagePickerFramerwork;
+			path = NDImagePickerFramework;
 			sourceTree = "<group>";
 		};
 		D978EFE923D21A020027938E /* HelperExtensions */ = {
@@ -249,9 +252,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D962B10E23D1F03100FC5386 /* NDImagePicker */ = {
+		D962B10E23D1F03100FC5386 /* NDImagePickerApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D962B12323D1F03200FC5386 /* Build configuration list for PBXNativeTarget "NDImagePicker" */;
+			buildConfigurationList = D962B12323D1F03200FC5386 /* Build configuration list for PBXNativeTarget "NDImagePickerApp" */;
 			buildPhases = (
 				D962B10B23D1F03100FC5386 /* Sources */,
 				D962B10C23D1F03100FC5386 /* Frameworks */,
@@ -261,9 +264,9 @@
 			);
 			dependencies = (
 			);
-			name = NDImagePicker;
+			name = NDImagePickerApp;
 			productName = NDMediaPicker;
-			productReference = D962B10F23D1F03100FC5386 /* NDImagePicker.app */;
+			productReference = D962B10F23D1F03100FC5386 /* NDImagePickerApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -281,7 +284,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D962B10A23D1F03100FC5386 /* Build configuration list for PBXProject "NDImagePicker" */;
+			buildConfigurationList = D962B10A23D1F03100FC5386 /* Build configuration list for PBXProject "NDImagePickerApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -294,7 +297,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D962B10E23D1F03100FC5386 /* NDImagePicker */,
+				D962B10E23D1F03100FC5386 /* NDImagePickerApp */,
 			);
 		};
 /* End PBXProject section */
@@ -338,6 +341,7 @@
 				D978F02B23D220130027938E /* Flipable.swift in Sources */,
 				D978F02023D220020027938E /* TopBar.swift in Sources */,
 				D978F02523D2200F0027938E /* CropperState.swift in Sources */,
+				D978F03023D228C40027938E /* NDImagePickerViewController.swift in Sources */,
 				D978F02C23D220130027938E /* Rotatable.swift in Sources */,
 				D978F01C23D21FFD0027938E /* UIView+Helper.swift in Sources */,
 				D978F01B23D21FFD0027938E /* UIImage+Helper.swift in Sources */,
@@ -503,8 +507,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.neone.NDImagePicker;
-				PRODUCT_NAME = NDImagePicker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neone.NDImagePickerApp;
+				PRODUCT_NAME = NDImagePickerApp;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -521,8 +525,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.neone.NDImagePicker;
-				PRODUCT_NAME = NDImagePicker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neone.NDImagePickerApp;
+				PRODUCT_NAME = NDImagePickerApp;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -531,7 +535,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D962B10A23D1F03100FC5386 /* Build configuration list for PBXProject "NDImagePicker" */ = {
+		D962B10A23D1F03100FC5386 /* Build configuration list for PBXProject "NDImagePickerApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D962B12123D1F03200FC5386 /* Debug */,
@@ -540,7 +544,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D962B12323D1F03200FC5386 /* Build configuration list for PBXNativeTarget "NDImagePicker" */ = {
+		D962B12323D1F03200FC5386 /* Build configuration list for PBXNativeTarget "NDImagePickerApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D962B12423D1F03200FC5386 /* Debug */,
