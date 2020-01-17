@@ -26,6 +26,37 @@
 		D962B11E23D1F03200FC5386 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D962B12023D1F03200FC5386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D962B12723D1F45E00FC5386 /* UIViewX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewX.swift; sourceTree = "<group>"; };
+		D978EFEA23D21A020027938E /* UIImage+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Helper.swift"; sourceTree = "<group>"; };
+		D978EFEB23D21A020027938E /* UIView+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Helper.swift"; sourceTree = "<group>"; };
+		D978EFEC23D21A020027938E /* UIImage+Cropping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Cropping.swift"; sourceTree = "<group>"; };
+		D978EFED23D21A020027938E /* HelperExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperExtensions.swift; sourceTree = "<group>"; };
+		D978EFEF23D21A020027938E /* CropBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropBox.swift; sourceTree = "<group>"; };
+		D978EFF023D21A020027938E /* Overlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overlay.swift; sourceTree = "<group>"; };
+		D978EFF123D21A020027938E /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		D978EFF323D21A020027938E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D978EFF523D21A020027938E /* CropBoxEdgeDraggable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropBoxEdgeDraggable.swift; sourceTree = "<group>"; };
+		D978EFF623D21A020027938E /* StateRestorable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateRestorable.swift; sourceTree = "<group>"; };
+		D978EFF723D21A020027938E /* Stasisable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stasisable.swift; sourceTree = "<group>"; };
+		D978EFF823D21A020027938E /* Flipable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flipable.swift; sourceTree = "<group>"; };
+		D978EFF923D21A020027938E /* Rotatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rotatable.swift; sourceTree = "<group>"; };
+		D978EFFA23D21A020027938E /* AngleAssist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngleAssist.swift; sourceTree = "<group>"; };
+		D978EFFB23D21A020027938E /* AspectRatioSettable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectRatioSettable.swift; sourceTree = "<group>"; };
+		D978EFFC23D21A020027938E /* ScrollViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewContainer.swift; sourceTree = "<group>"; };
+		D978EFFD23D21A020027938E /* CropperState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropperState.swift; sourceTree = "<group>"; };
+		D978EFFE23D21A020027938E /* CropperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropperViewController.swift; sourceTree = "<group>"; };
+		D978EFFF23D21A020027938E /* AspectRatio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectRatio.swift; sourceTree = "<group>"; };
+		D978F00123D21A020027938E /* Toolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toolbar.swift; sourceTree = "<group>"; };
+		D978F00223D21A020027938E /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
+		D978F00323D21A020027938E /* AngleRuler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngleRuler.swift; sourceTree = "<group>"; };
+		D978F00423D21A020027938E /* AspectRatioPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectRatioPicker.swift; sourceTree = "<group>"; };
+		D978F00623D21A200027938E /* QCropper.check.mark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QCropper.check.mark@2x.png"; sourceTree = "<group>"; };
+		D978F00723D21A200027938E /* QCropper.rotate.right.fill@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QCropper.rotate.right.fill@2x.png"; sourceTree = "<group>"; };
+		D978F00823D21A200027938E /* QCropper.rotate.right.fill@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QCropper.rotate.right.fill@3x.png"; sourceTree = "<group>"; };
+		D978F00923D21A200027938E /* QCropper.check.mark@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QCropper.check.mark@3x.png"; sourceTree = "<group>"; };
+		D978F00A23D21A200027938E /* QCropper.aspectratio.fill@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QCropper.aspectratio.fill@2x.png"; sourceTree = "<group>"; };
+		D978F00B23D21A200027938E /* QCropper.aspectratio.fill@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QCropper.aspectratio.fill@3x.png"; sourceTree = "<group>"; };
+		D978F00C23D21A200027938E /* QCropper.flip.horizontal.fill@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QCropper.flip.horizontal.fill@3x.png"; sourceTree = "<group>"; };
+		D978F00D23D21A200027938E /* QCropper.flip.horizontal.fill@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QCropper.flip.horizontal.fill@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +89,9 @@
 		D962B11123D1F03100FC5386 /* NDImagePicker */ = {
 			isa = PBXGroup;
 			children = (
+				D978EF7823D219E70027938E /* NDImagePickerFramerwork */,
 				D962B11D23D1F03200FC5386 /* LaunchScreen.storyboard */,
 				D962B12923D1F4BD00FC5386 /* Example App */,
-				D962B12823D1F49B00FC5386 /* NDImagePickerFramework */,
 				D962B12623D1F43900FC5386 /* Utilities */,
 			);
 			path = NDImagePicker;
@@ -72,14 +103,6 @@
 				D962B12723D1F45E00FC5386 /* UIViewX.swift */,
 			);
 			path = Utilities;
-			sourceTree = "<group>";
-		};
-		D962B12823D1F49B00FC5386 /* NDImagePickerFramework */ = {
-			isa = PBXGroup;
-			children = (
-				D978EF7623D219A60027938E /* New Group */,
-			);
-			path = NDImagePickerFramework;
 			sourceTree = "<group>";
 		};
 		D962B12923D1F4BD00FC5386 /* Example App */ = {
@@ -95,11 +118,98 @@
 			path = "Example App";
 			sourceTree = "<group>";
 		};
-		D978EF7623D219A60027938E /* New Group */ = {
+		D978EF7723D219DF0027938E /* QCropper */ = {
 			isa = PBXGroup;
 			children = (
+				D978EFF223D21A020027938E /* Core */,
+				D978F00023D21A020027938E /* CustomUI */,
+				D978EFE923D21A020027938E /* HelperExtensions */,
+				D978EFEE23D21A020027938E /* Overlay */,
+				D978F00523D21A200027938E /* Assets */,
 			);
-			path = "New Group";
+			path = QCropper;
+			sourceTree = "<group>";
+		};
+		D978EF7823D219E70027938E /* NDImagePickerFramerwork */ = {
+			isa = PBXGroup;
+			children = (
+				D978EF7723D219DF0027938E /* QCropper */,
+			);
+			path = NDImagePickerFramerwork;
+			sourceTree = "<group>";
+		};
+		D978EFE923D21A020027938E /* HelperExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				D978EFEA23D21A020027938E /* UIImage+Helper.swift */,
+				D978EFEB23D21A020027938E /* UIView+Helper.swift */,
+				D978EFEC23D21A020027938E /* UIImage+Cropping.swift */,
+				D978EFED23D21A020027938E /* HelperExtensions.swift */,
+			);
+			path = HelperExtensions;
+			sourceTree = "<group>";
+		};
+		D978EFEE23D21A020027938E /* Overlay */ = {
+			isa = PBXGroup;
+			children = (
+				D978EFEF23D21A020027938E /* CropBox.swift */,
+				D978EFF023D21A020027938E /* Overlay.swift */,
+				D978EFF123D21A020027938E /* Grid.swift */,
+			);
+			path = Overlay;
+			sourceTree = "<group>";
+		};
+		D978EFF223D21A020027938E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D978EFF323D21A020027938E /* Constants.swift */,
+				D978EFF423D21A020027938E /* CropperProtocols */,
+				D978EFFC23D21A020027938E /* ScrollViewContainer.swift */,
+				D978EFFD23D21A020027938E /* CropperState.swift */,
+				D978EFFE23D21A020027938E /* CropperViewController.swift */,
+				D978EFFF23D21A020027938E /* AspectRatio.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D978EFF423D21A020027938E /* CropperProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				D978EFF523D21A020027938E /* CropBoxEdgeDraggable.swift */,
+				D978EFF623D21A020027938E /* StateRestorable.swift */,
+				D978EFF723D21A020027938E /* Stasisable.swift */,
+				D978EFF823D21A020027938E /* Flipable.swift */,
+				D978EFF923D21A020027938E /* Rotatable.swift */,
+				D978EFFA23D21A020027938E /* AngleAssist.swift */,
+				D978EFFB23D21A020027938E /* AspectRatioSettable.swift */,
+			);
+			path = CropperProtocols;
+			sourceTree = "<group>";
+		};
+		D978F00023D21A020027938E /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				D978F00123D21A020027938E /* Toolbar.swift */,
+				D978F00223D21A020027938E /* TopBar.swift */,
+				D978F00323D21A020027938E /* AngleRuler.swift */,
+				D978F00423D21A020027938E /* AspectRatioPicker.swift */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		D978F00523D21A200027938E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				D978F00623D21A200027938E /* QCropper.check.mark@2x.png */,
+				D978F00723D21A200027938E /* QCropper.rotate.right.fill@2x.png */,
+				D978F00823D21A200027938E /* QCropper.rotate.right.fill@3x.png */,
+				D978F00923D21A200027938E /* QCropper.check.mark@3x.png */,
+				D978F00A23D21A200027938E /* QCropper.aspectratio.fill@2x.png */,
+				D978F00B23D21A200027938E /* QCropper.aspectratio.fill@3x.png */,
+				D978F00C23D21A200027938E /* QCropper.flip.horizontal.fill@3x.png */,
+				D978F00D23D21A200027938E /* QCropper.flip.horizontal.fill@2x.png */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
