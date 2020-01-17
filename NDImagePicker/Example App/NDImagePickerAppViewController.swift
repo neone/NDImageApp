@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  NDImagePickerAppViewController.swift
 //  NDMediaPicker
 //
 //  Created by Dave Glassco on 1/17/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class NDImagePickerAppViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

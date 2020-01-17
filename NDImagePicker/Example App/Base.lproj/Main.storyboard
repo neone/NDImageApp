@@ -7,15 +7,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Image Picker App View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NDImagePicker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="NDImagePickerAppViewController" customModule="NDImagePicker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mST-Jz-S2m" userLabel="ProfileView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mST-Jz-S2m" userLabel="ImageFrame" customClass="UIViewX" customModule="NDImagePicker" customModuleProvider="target">
                                 <rect key="frame" x="138.5" y="158" width="137" height="137"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AGd-fO-X3I">
@@ -25,52 +25,77 @@
                                             <constraint firstAttribute="width" secondItem="AGd-fO-X3I" secondAttribute="height" multiplier="1:1" id="dG3-tR-7BP"/>
                                         </constraints>
                                     </imageView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dmz-Bq-34C" customClass="UIViewX">
-                                        <rect key="frame" x="0.0" y="0.0" width="137" height="137"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="9"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Image" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YoK-aK-ASb">
+                                        <rect key="frame" x="19.5" y="59.5" width="98.5" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="dmz-Bq-34C" firstAttribute="width" secondItem="mST-Jz-S2m" secondAttribute="height" multiplier="1:1" id="72L-SQ-PZu"/>
-                                    <constraint firstItem="dmz-Bq-34C" firstAttribute="centerY" secondItem="mST-Jz-S2m" secondAttribute="centerYWithinMargins" id="F9e-hQ-R9V"/>
                                     <constraint firstItem="AGd-fO-X3I" firstAttribute="height" secondItem="mST-Jz-S2m" secondAttribute="height" id="G7s-hc-Xid"/>
-                                    <constraint firstItem="dmz-Bq-34C" firstAttribute="height" secondItem="mST-Jz-S2m" secondAttribute="height" id="NGJ-Xb-KLB"/>
                                     <constraint firstItem="AGd-fO-X3I" firstAttribute="centerX" secondItem="mST-Jz-S2m" secondAttribute="centerX" id="OUb-Ad-KrV"/>
                                     <constraint firstAttribute="width" secondItem="mST-Jz-S2m" secondAttribute="height" multiplier="1:1" id="PnN-oU-47j"/>
+                                    <constraint firstItem="YoK-aK-ASb" firstAttribute="centerY" secondItem="mST-Jz-S2m" secondAttribute="centerYWithinMargins" id="eUS-1j-jbY"/>
                                     <constraint firstItem="AGd-fO-X3I" firstAttribute="centerY" secondItem="mST-Jz-S2m" secondAttribute="centerY" id="fI5-1X-BuT"/>
-                                    <constraint firstItem="dmz-Bq-34C" firstAttribute="centerX" secondItem="mST-Jz-S2m" secondAttribute="centerXWithinMargins" id="i93-rI-0v7"/>
+                                    <constraint firstItem="YoK-aK-ASb" firstAttribute="centerX" secondItem="mST-Jz-S2m" secondAttribute="centerXWithinMargins" id="vc2-Ti-TG5"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTg-NY-mB4">
-                                <rect key="frame" x="214" y="557" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVf-Qn-3fq">
-                                <rect key="frame" x="184" y="832" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVf-Qn-3fq" customClass="UIButtonX" customModule="NDImagePicker" customModuleProvider="target">
+                                <rect key="frame" x="20.5" y="816" width="373" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="XZ7-V7-Gql"/>
+                                </constraints>
+                                <state key="normal" title="Choose Image">
                                     <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4uH-El-s45">
-                                <rect key="frame" x="146" y="391" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="onTintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </switch>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="CFh-gh-czP">
+                                <rect key="frame" x="140" y="327" width="134" height="31"/>
+                                <subviews>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4uH-El-s45">
+                                        <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                        <color key="onTintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rounded" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQl-8c-9rm">
+                                        <rect key="frame" x="65" y="0.0" width="69" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="xVf-Qn-3fq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerXWithinMargins" id="270-kM-tjI"/>
+                            <constraint firstItem="CFh-gh-czP" firstAttribute="centerX" secondItem="mST-Jz-S2m" secondAttribute="centerX" id="M5m-LE-QSt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xVf-Qn-3fq" secondAttribute="bottom" constant="16" id="Y7M-sO-Met"/>
+                            <constraint firstItem="CFh-gh-czP" firstAttribute="top" secondItem="mST-Jz-S2m" secondAttribute="bottom" constant="32" id="YPf-HR-btJ"/>
+                            <constraint firstItem="xVf-Qn-3fq" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="ZLN-3B-Jcf"/>
                             <constraint firstItem="mST-Jz-S2m" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.33" id="e5j-AZ-kcx"/>
                             <constraint firstItem="mST-Jz-S2m" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.5" id="eO2-LP-alN"/>
                             <constraint firstItem="mST-Jz-S2m" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="s3V-t1-wHY"/>
