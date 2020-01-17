@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "NDImageManager",
+        "repositoryURL": "https://github.com/neone/NDImageManager.git",
+        "state": {
+          "branch": "master",
+          "revision": "5cdb35b2412cb06bc8852f2188f2e88a400d7e70",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,5 +1,5 @@
 //
-//  NDImageManagerAppViewController.swift
+//  NDImageAppViewController.swift
 //  NDMediaPicker
 //
 //  Created by Dave Glassco on 1/17/20.
@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import NDImageManager
 
-class NDImageManagerAppViewController: UIViewController, NDImagePickerDelegate {
+class NDImageAppViewController: UIViewController, NDImagePickerDelegate {
  
     //MARK: Variables and Outlets
     var isRounded = false
     var isEditable = false
+    
     
     @IBOutlet weak var frameView: UIViewX!
     @IBOutlet weak var imageView: UIImageView!
@@ -27,7 +29,7 @@ class NDImageManagerAppViewController: UIViewController, NDImagePickerDelegate {
     
     @IBAction func roundedSwitchChanged(_ sender: Any) {
         if roundedSwitch.isOn {
-            let roundness = frameView.height / 2
+            let roundness = frameView.frame.height / 2
             frameView.cornerRadius = roundness
             isRounded = true
         } else {
