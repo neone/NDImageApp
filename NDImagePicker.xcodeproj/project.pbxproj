@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D962B10F23D1F03100FC5386 /* NDMediaPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NDMediaPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D962B10F23D1F03100FC5386 /* NDImagePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NDImagePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D962B11223D1F03100FC5386 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D962B11423D1F03100FC5386 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D962B11623D1F03100FC5386 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,7 +41,7 @@
 		D962B10623D1F03100FC5386 = {
 			isa = PBXGroup;
 			children = (
-				D962B11123D1F03100FC5386 /* NDMediaPicker */,
+				D962B11123D1F03100FC5386 /* NDImagePicker */,
 				D962B11023D1F03100FC5386 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,20 +49,20 @@
 		D962B11023D1F03100FC5386 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D962B10F23D1F03100FC5386 /* NDMediaPicker.app */,
+				D962B10F23D1F03100FC5386 /* NDImagePicker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D962B11123D1F03100FC5386 /* NDMediaPicker */ = {
+		D962B11123D1F03100FC5386 /* NDImagePicker */ = {
 			isa = PBXGroup;
 			children = (
 				D962B11D23D1F03200FC5386 /* LaunchScreen.storyboard */,
 				D962B12923D1F4BD00FC5386 /* Example App */,
-				D962B12823D1F49B00FC5386 /* NDMediaPickerFramework */,
+				D962B12823D1F49B00FC5386 /* NDImagePickerFramework */,
 				D962B12623D1F43900FC5386 /* Utilities */,
 			);
-			path = NDMediaPicker;
+			path = NDImagePicker;
 			sourceTree = "<group>";
 		};
 		D962B12623D1F43900FC5386 /* Utilities */ = {
@@ -73,11 +73,11 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		D962B12823D1F49B00FC5386 /* NDMediaPickerFramework */ = {
+		D962B12823D1F49B00FC5386 /* NDImagePickerFramework */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = NDMediaPickerFramework;
+			path = NDImagePickerFramework;
 			sourceTree = "<group>";
 		};
 		D962B12923D1F4BD00FC5386 /* Example App */ = {
@@ -96,9 +96,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D962B10E23D1F03100FC5386 /* NDMediaPicker */ = {
+		D962B10E23D1F03100FC5386 /* NDImagePicker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D962B12323D1F03200FC5386 /* Build configuration list for PBXNativeTarget "NDMediaPicker" */;
+			buildConfigurationList = D962B12323D1F03200FC5386 /* Build configuration list for PBXNativeTarget "NDImagePicker" */;
 			buildPhases = (
 				D962B10B23D1F03100FC5386 /* Sources */,
 				D962B10C23D1F03100FC5386 /* Frameworks */,
@@ -108,9 +108,9 @@
 			);
 			dependencies = (
 			);
-			name = NDMediaPicker;
+			name = NDImagePicker;
 			productName = NDMediaPicker;
-			productReference = D962B10F23D1F03100FC5386 /* NDMediaPicker.app */;
+			productReference = D962B10F23D1F03100FC5386 /* NDImagePicker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -128,7 +128,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D962B10A23D1F03100FC5386 /* Build configuration list for PBXProject "NDMediaPicker" */;
+			buildConfigurationList = D962B10A23D1F03100FC5386 /* Build configuration list for PBXProject "NDImagePicker" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -141,7 +141,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D962B10E23D1F03100FC5386 /* NDMediaPicker */,
+				D962B10E23D1F03100FC5386 /* NDImagePicker */,
 			);
 		};
 /* End PBXProject section */
@@ -312,15 +312,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 77YXYQDT3J;
-				INFOPLIST_FILE = NDMediaPicker/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/NDImagePicker/Example App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.neone.NDMediaPicker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neone.NDImagePicker;
+				PRODUCT_NAME = NDImagePicker;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,22 +330,22 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 77YXYQDT3J;
-				INFOPLIST_FILE = NDMediaPicker/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/NDImagePicker/Example App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.neone.NDMediaPicker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neone.NDImagePicker;
+				PRODUCT_NAME = NDImagePicker;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D962B10A23D1F03100FC5386 /* Build configuration list for PBXProject "NDMediaPicker" */ = {
+		D962B10A23D1F03100FC5386 /* Build configuration list for PBXProject "NDImagePicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D962B12123D1F03200FC5386 /* Debug */,
@@ -354,7 +354,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D962B12323D1F03200FC5386 /* Build configuration list for PBXNativeTarget "NDMediaPicker" */ = {
+		D962B12323D1F03200FC5386 /* Build configuration list for PBXNativeTarget "NDImagePicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D962B12423D1F03200FC5386 /* Debug */,
