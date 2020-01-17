@@ -8,22 +8,15 @@
 
 import UIKit
 
-class NDImagePickerAppViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class NDImagePickerAppViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CropperViewControllerDelegate {
 
-    @IBOutlet weak var frameView: UIViewX!
-    @IBOutlet weak var imageView: UIImageView! {
-        didSet {
-            if imageView != nil {
-                imageInstrucitons.isHidden = true
-            }
-        }
-    }
+    var cropperState: CropperState?
     
-    @IBOutlet weak var imageInstrucitons: UILabel!
+    @IBOutlet weak var frameView: UIViewX!
+    @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func chooseImageTapped(_ sender: Any) {
@@ -34,11 +27,38 @@ class NDImagePickerAppViewController: UIViewController, UIImagePickerControllerD
         present(picker, animated: true, completion: nil)
     }
     
+    
+}
+
+//MARK: ImagePickerDelegate
+extension NDImagePickerAppViewController {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
            guard let image = (info[.originalImage] as? UIImage) else { return }
         
-        imageView.image = image
-        picker.dismiss(animated: true) 
+        let cropper = CropperViewController(originalImage: image)
+
+        cropper.delegate = self
+
+        
+//        imageView.image = image
+        picker.dismiss(animated: true) {
+            self.present(cropper, animated: true, completion: nil)
+        }
     }
 }
 
+
+//MARK: CropperViewDelegate
+extension NDImagePickerAppViewController {
+    func cropperDidConfirm(_ cropper: CropperViewController, state: CropperState?) {
+        cropper.dismiss(animated: true, completion: nil)
+
+        if let state = state,
+            let image = cropper.originalImage.cropped(withCropperState: state) {
+            cropperState = state
+            imageView.image = image
+            print(cropper.isCurrentlyInInitialState)
+            print(image)
+        }
+    }
+}

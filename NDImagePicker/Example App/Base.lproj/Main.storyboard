@@ -25,20 +25,12 @@
                                             <constraint firstAttribute="width" secondItem="AGd-fO-X3I" secondAttribute="height" multiplier="1:1" id="dG3-tR-7BP"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Image" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YoK-aK-ASb">
-                                        <rect key="frame" x="19.5" y="59.5" width="98.5" height="18"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="AGd-fO-X3I" firstAttribute="height" secondItem="mST-Jz-S2m" secondAttribute="height" id="G7s-hc-Xid"/>
                                     <constraint firstItem="AGd-fO-X3I" firstAttribute="centerX" secondItem="mST-Jz-S2m" secondAttribute="centerX" id="OUb-Ad-KrV"/>
                                     <constraint firstAttribute="width" secondItem="mST-Jz-S2m" secondAttribute="height" multiplier="1:1" id="PnN-oU-47j"/>
-                                    <constraint firstItem="YoK-aK-ASb" firstAttribute="centerY" secondItem="mST-Jz-S2m" secondAttribute="centerYWithinMargins" id="eUS-1j-jbY"/>
                                     <constraint firstItem="AGd-fO-X3I" firstAttribute="centerY" secondItem="mST-Jz-S2m" secondAttribute="centerY" id="fI5-1X-BuT"/>
-                                    <constraint firstItem="YoK-aK-ASb" firstAttribute="centerX" secondItem="mST-Jz-S2m" secondAttribute="centerXWithinMargins" id="vc2-Ti-TG5"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -107,7 +99,6 @@
                     </view>
                     <connections>
                         <outlet property="frameView" destination="mST-Jz-S2m" id="NNs-Fc-D4g"/>
-                        <outlet property="imageInstrucitons" destination="YoK-aK-ASb" id="Rex-li-4IY"/>
                         <outlet property="imageView" destination="AGd-fO-X3I" id="XYu-KL-ec6"/>
                     </connections>
                 </viewController>

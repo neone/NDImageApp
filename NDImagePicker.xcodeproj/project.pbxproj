@@ -15,6 +15,37 @@
 		D962B11F23D1F03200FC5386 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D962B11D23D1F03200FC5386 /* LaunchScreen.storyboard */; };
 		D978EF7523D211B40027938E /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D962B12723D1F45E00FC5386 /* UIViewX.swift */; };
 		D978F00F23D21B450027938E /* UIButtonX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978F00E23D21B450027938E /* UIButtonX.swift */; };
+		D978F01023D21FF30027938E /* QCropper.check.mark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D978F00623D21A200027938E /* QCropper.check.mark@2x.png */; };
+		D978F01123D21FF30027938E /* QCropper.rotate.right.fill@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D978F00723D21A200027938E /* QCropper.rotate.right.fill@2x.png */; };
+		D978F01223D21FF30027938E /* QCropper.rotate.right.fill@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D978F00823D21A200027938E /* QCropper.rotate.right.fill@3x.png */; };
+		D978F01323D21FF30027938E /* QCropper.check.mark@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D978F00923D21A200027938E /* QCropper.check.mark@3x.png */; };
+		D978F01423D21FF30027938E /* QCropper.aspectratio.fill@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D978F00A23D21A200027938E /* QCropper.aspectratio.fill@2x.png */; };
+		D978F01523D21FF30027938E /* QCropper.aspectratio.fill@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D978F00B23D21A200027938E /* QCropper.aspectratio.fill@3x.png */; };
+		D978F01623D21FF30027938E /* QCropper.flip.horizontal.fill@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D978F00C23D21A200027938E /* QCropper.flip.horizontal.fill@3x.png */; };
+		D978F01723D21FF30027938E /* QCropper.flip.horizontal.fill@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D978F00D23D21A200027938E /* QCropper.flip.horizontal.fill@2x.png */; };
+		D978F01823D21FF70027938E /* CropBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978EFEF23D21A020027938E /* CropBox.swift */; };
+		D978F01923D21FF70027938E /* Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978EFF023D21A020027938E /* Overlay.swift */; };
+		D978F01A23D21FF70027938E /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978EFF123D21A020027938E /* Grid.swift */; };
+		D978F01B23D21FFD0027938E /* UIImage+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978EFEA23D21A020027938E /* UIImage+Helper.swift */; };
+		D978F01C23D21FFD0027938E /* UIView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978EFEB23D21A020027938E /* UIView+Helper.swift */; };
+		D978F01D23D21FFD0027938E /* UIImage+Cropping.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978EFEC23D21A020027938E /* UIImage+Cropping.swift */; };
+		D978F01E23D21FFD0027938E /* HelperExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978EFED23D21A020027938E /* HelperExtensions.swift */; };
+		D978F01F23D220020027938E /* Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978F00123D21A020027938E /* Toolbar.swift */; };
+		D978F02023D220020027938E /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978F00223D21A020027938E /* TopBar.swift */; };
+		D978F02123D220020027938E /* AngleRuler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978F00323D21A020027938E /* AngleRuler.swift */; };
+		D978F02223D220020027938E /* AspectRatioPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978F00423D21A020027938E /* AspectRatioPicker.swift */; };
+		D978F02323D2200F0027938E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978EFF323D21A020027938E /* Constants.swift */; };
+		D978F02423D2200F0027938E /* ScrollViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978EFFC23D21A020027938E /* ScrollViewContainer.swift */; };
+		D978F02523D2200F0027938E /* CropperState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978EFFD23D21A020027938E /* CropperState.swift */; };
+		D978F02623D2200F0027938E /* CropperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978EFFE23D21A020027938E /* CropperViewController.swift */; };
+		D978F02723D2200F0027938E /* AspectRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978EFFF23D21A020027938E /* AspectRatio.swift */; };
+		D978F02823D220130027938E /* CropBoxEdgeDraggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978EFF523D21A020027938E /* CropBoxEdgeDraggable.swift */; };
+		D978F02923D220130027938E /* StateRestorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978EFF623D21A020027938E /* StateRestorable.swift */; };
+		D978F02A23D220130027938E /* Stasisable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978EFF723D21A020027938E /* Stasisable.swift */; };
+		D978F02B23D220130027938E /* Flipable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978EFF823D21A020027938E /* Flipable.swift */; };
+		D978F02C23D220130027938E /* Rotatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978EFF923D21A020027938E /* Rotatable.swift */; };
+		D978F02D23D220130027938E /* AngleAssist.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978EFFA23D21A020027938E /* AngleAssist.swift */; };
+		D978F02E23D220130027938E /* AspectRatioSettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978EFFB23D21A020027938E /* AspectRatioSettable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -273,9 +304,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D978F01023D21FF30027938E /* QCropper.check.mark@2x.png in Resources */,
 				D962B11F23D1F03200FC5386 /* LaunchScreen.storyboard in Resources */,
+				D978F01123D21FF30027938E /* QCropper.rotate.right.fill@2x.png in Resources */,
 				D962B11C23D1F03200FC5386 /* Assets.xcassets in Resources */,
+				D978F01623D21FF30027938E /* QCropper.flip.horizontal.fill@3x.png in Resources */,
+				D978F01323D21FF30027938E /* QCropper.check.mark@3x.png in Resources */,
+				D978F01723D21FF30027938E /* QCropper.flip.horizontal.fill@2x.png in Resources */,
 				D962B11A23D1F03100FC5386 /* Main.storyboard in Resources */,
+				D978F01523D21FF30027938E /* QCropper.aspectratio.fill@3x.png in Resources */,
+				D978F01423D21FF30027938E /* QCropper.aspectratio.fill@2x.png in Resources */,
+				D978F01223D21FF30027938E /* QCropper.rotate.right.fill@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,11 +325,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D978F02D23D220130027938E /* AngleAssist.swift in Sources */,
+				D978F01D23D21FFD0027938E /* UIImage+Cropping.swift in Sources */,
+				D978F02323D2200F0027938E /* Constants.swift in Sources */,
+				D978F01F23D220020027938E /* Toolbar.swift in Sources */,
+				D978F01E23D21FFD0027938E /* HelperExtensions.swift in Sources */,
+				D978F02623D2200F0027938E /* CropperViewController.swift in Sources */,
 				D962B11723D1F03100FC5386 /* NDImagePickerAppViewController.swift in Sources */,
 				D978F00F23D21B450027938E /* UIButtonX.swift in Sources */,
 				D978EF7523D211B40027938E /* UIViewX.swift in Sources */,
+				D978F01A23D21FF70027938E /* Grid.swift in Sources */,
+				D978F02B23D220130027938E /* Flipable.swift in Sources */,
+				D978F02023D220020027938E /* TopBar.swift in Sources */,
+				D978F02523D2200F0027938E /* CropperState.swift in Sources */,
+				D978F02C23D220130027938E /* Rotatable.swift in Sources */,
+				D978F01C23D21FFD0027938E /* UIView+Helper.swift in Sources */,
+				D978F01B23D21FFD0027938E /* UIImage+Helper.swift in Sources */,
+				D978F01823D21FF70027938E /* CropBox.swift in Sources */,
+				D978F01923D21FF70027938E /* Overlay.swift in Sources */,
 				D962B11323D1F03100FC5386 /* AppDelegate.swift in Sources */,
+				D978F02E23D220130027938E /* AspectRatioSettable.swift in Sources */,
 				D962B11523D1F03100FC5386 /* SceneDelegate.swift in Sources */,
+				D978F02723D2200F0027938E /* AspectRatio.swift in Sources */,
+				D978F02823D220130027938E /* CropBoxEdgeDraggable.swift in Sources */,
+				D978F02923D220130027938E /* StateRestorable.swift in Sources */,
+				D978F02123D220020027938E /* AngleRuler.swift in Sources */,
+				D978F02223D220020027938E /* AspectRatioPicker.swift in Sources */,
+				D978F02A23D220130027938E /* Stasisable.swift in Sources */,
+				D978F02423D2200F0027938E /* ScrollViewContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
