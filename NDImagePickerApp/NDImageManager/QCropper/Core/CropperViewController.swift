@@ -23,11 +23,11 @@ public protocol CropperViewControllerDelegate: class {
     func cropperDidCancel(_ cropper: CropperViewController)
 }
 
-public extension CropperViewControllerDelegate {
-    func cropperDidCancel(_ cropper: CropperViewController) {
-        cropper.dismiss(animated: true, completion: nil)
-    }
-}
+//public extension CropperViewControllerDelegate {
+//    func cropperDidCancel(_ cropper: CropperViewController) {
+//        cropper.dismiss(animated: true, completion: nil)
+//    }
+//}
 
 open class CropperViewController: UIViewController, Rotatable, StateRestorable, Flipable {
     public let originalImage: UIImage
@@ -451,11 +451,11 @@ open class CropperViewController: UIViewController, Rotatable, StateRestorable, 
         currentAspectRatioValue = 1
 
         if isCircular {
-            isCropBoxPanEnabled = false
+            isCropBoxPanEnabled = true
             overlay.isCircular = true
             topBar.isHidden = true
             aspectRatioPicker.isHidden = true
-            angleRuler.isHidden = true
+            angleRuler.isHidden = false
             cropBoxFrame = CGRect(center: defaultCropBoxCenter, size: CGSize(width: maxCropRegion.size.width, height: maxCropRegion.size.width))
             matchScrollViewAndCropView()
         } else {

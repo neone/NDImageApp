@@ -1,5 +1,5 @@
 //
-//  NDImagePickerAppViewController.swift
+//  NDImageManagerAppViewController.swift
 //  NDMediaPicker
 //
 //  Created by Dave Glassco on 1/17/20.
@@ -8,11 +8,10 @@
 
 import UIKit
 
-class NDImagePickerAppViewController: UIViewController, NDImagePickerDelegate {
+class NDImageManagerAppViewController: UIViewController, NDImagePickerDelegate {
  
-    var cropperState: CropperState?
     var isRounded = false
-    var shouldCrop = false
+    var isEditable = false
     
     @IBOutlet weak var frameView: UIViewX!
     @IBOutlet weak var imageView: UIImageView!
@@ -36,21 +35,16 @@ class NDImagePickerAppViewController: UIViewController, NDImagePickerDelegate {
     }
     
     @IBAction func chooseImageTapped(_ sender: Any) {
+        if roundedSwitch.isOn {
+            isRounded = true
+        }
+        if cropSwitch.isOn {
+            isEditable = true
+        }
+        
         let picker = NDImageManager()
         picker.imagePickerDelegate = self
-        
-        if roundedSwitch.isOn {
-            picker.isRounded = true
-        } else {
-            picker.isRounded = false
-        }
-        
-        if cropSwitch.isOn {
-            picker.shouldCrop = true
-        } else {
-            picker.shouldCrop = false
-        }
-        
+        picker.setUpImageManager(editable: isEditable, rounded: isRounded)
         present(picker, animated: true, completion: nil)
     }
     

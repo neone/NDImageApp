@@ -15,8 +15,8 @@ protocol NDImagePickerDelegate {
 class NDImageManager: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CropperViewControllerDelegate {
 
     var cropperState: CropperState?
-    var shouldCrop = false
-    var isRounded = false
+    fileprivate var shouldShowEdit = false
+    fileprivate var isRounded = false
     
     var imagePickerDelegate: NDImagePickerDelegate?
     
@@ -26,7 +26,23 @@ class NDImageManager: UIViewController, UIImagePickerControllerDelegate, UINavig
         launchImagePicker()
     }
     
-    func launchImagePicker() {
+    
+    /// Public Setup Method - this is how NDImageManager should be set from outside the framework
+    /// - Parameters:
+    ///   - editable: sets whether edit window called after picker
+    ///   - rounded: set edit window crop to round only
+    public func setUpImageManager(editable: Bool, rounded: Bool ) {
+        if editable {
+            shouldShowEdit = true
+        }
+        if rounded {
+            isRounded = true
+        }
+    }
+    
+    
+    //Private Class Methods
+    fileprivate func launchImagePicker() {
         let picker = UIImagePickerController()
                picker.sourceType = .photoLibrary
                picker.allowsEditing = false
@@ -51,7 +67,7 @@ extension NDImageManager {
     
             //Dismiss system picker and launch options if selected
         picker.dismiss(animated: true) {
-            if self.shouldCrop {
+            if self.shouldShowEdit {
                 self.present(cropper, animated: true, completion: nil)
             } else {
                 self.imagePickerDelegate?.editedImageReturned(image: image)
@@ -78,5 +94,10 @@ extension NDImageManager {
             imagePickerDelegate?.editedImageReturned(image: image)
             self.dismiss(animated: true, completion: nil)
         }
+    }
+    
+    func cropperDidCancel(_ cropper: CropperViewController) {
+        cropper.dismiss(animated: true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
 }
