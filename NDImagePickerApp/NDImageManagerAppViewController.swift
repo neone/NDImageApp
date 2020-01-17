@@ -10,6 +10,7 @@ import UIKit
 
 class NDImageManagerAppViewController: UIViewController, NDImagePickerDelegate {
  
+    //MARK: Variables and Outlets
     var isRounded = false
     var isEditable = false
     
@@ -19,6 +20,7 @@ class NDImageManagerAppViewController: UIViewController, NDImagePickerDelegate {
     @IBOutlet weak var roundedSwitch: UISwitch!
     @IBOutlet weak var cropSwitch: UISwitch!
     
+    //MARK: - Initializers and Actions
     override func viewDidLoad() {
         super.viewDidLoad()
     }

@@ -124,8 +124,13 @@
 		D962B11123D1F03100FC5386 /* NDImagePickerApp */ = {
 			isa = PBXGroup;
 			children = (
+				D962B11223D1F03100FC5386 /* AppDelegate.swift */,
+				D962B11423D1F03100FC5386 /* SceneDelegate.swift */,
+				D962B11623D1F03100FC5386 /* NDImageManagerAppViewController.swift */,
 				D962B11D23D1F03200FC5386 /* LaunchScreen.storyboard */,
-				D962B12923D1F4BD00FC5386 /* Example App */,
+				D962B11823D1F03100FC5386 /* Main.storyboard */,
+				D962B12023D1F03200FC5386 /* Info.plist */,
+				D962B11B23D1F03200FC5386 /* Assets.xcassets */,
 				D962B12623D1F43900FC5386 /* Utilities */,
 				D978EF7823D219E70027938E /* NDImageManager */,
 			);
@@ -139,19 +144,6 @@
 				D978F00E23D21B450027938E /* UIButtonX.swift */,
 			);
 			path = Utilities;
-			sourceTree = "<group>";
-		};
-		D962B12923D1F4BD00FC5386 /* Example App */ = {
-			isa = PBXGroup;
-			children = (
-				D962B11423D1F03100FC5386 /* SceneDelegate.swift */,
-				D962B11623D1F03100FC5386 /* NDImageManagerAppViewController.swift */,
-				D962B11223D1F03100FC5386 /* AppDelegate.swift */,
-				D962B11823D1F03100FC5386 /* Main.storyboard */,
-				D962B11B23D1F03200FC5386 /* Assets.xcassets */,
-				D962B12023D1F03200FC5386 /* Info.plist */,
-			);
-			path = "Example App";
 			sourceTree = "<group>";
 		};
 		D978EF7723D219DF0027938E /* QCropper */ = {
