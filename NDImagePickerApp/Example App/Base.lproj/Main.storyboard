@@ -10,15 +10,15 @@
         <!--Image Picker App View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="NDImagePickerAppViewController" customModule="NDImagePicker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="NDImagePickerAppViewController" customModule="NDImagePickerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mST-Jz-S2m" userLabel="ImageFrame" customClass="UIViewX" customModule="NDImagePicker" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mST-Jz-S2m" userLabel="ImageFrame" customClass="UIViewX" customModule="NDImagePickerApp" customModuleProvider="target">
                                 <rect key="frame" x="138.5" y="158" width="137" height="137"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AGd-fO-X3I">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AGd-fO-X3I">
                                         <rect key="frame" x="0.0" y="0.0" width="137" height="137"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -34,7 +34,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="9"/>
+                                        <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="YES"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -45,7 +45,40 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVf-Qn-3fq" customClass="UIButtonX" customModule="NDImagePicker" customModuleProvider="target">
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="CFh-gh-czP" userLabel="Rounded Switch">
+                                <rect key="frame" x="140" y="319" width="134" height="31"/>
+                                <subviews>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4uH-El-s45">
+                                        <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                        <color key="onTintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="roundedSwitchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="fTQ-v5-bBf"/>
+                                        </connections>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rounded" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQl-8c-9rm">
+                                        <rect key="frame" x="65" y="0.0" width="69" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="vAv-rT-SAp" userLabel="Cropping Switch">
+                                <rect key="frame" x="116" y="761" width="182.5" height="31"/>
+                                <subviews>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3Mr-Mn-Xa9">
+                                        <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                        <color key="onTintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show Cropping" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jug-or-GTv">
+                                        <rect key="frame" x="65" y="0.0" width="117.5" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVf-Qn-3fq" customClass="UIButtonX" customModule="NDImagePickerApp" customModuleProvider="target">
                                 <rect key="frame" x="20.5" y="816" width="373" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="XZ7-V7-Gql"/>
@@ -68,38 +101,27 @@
                                     <action selector="chooseImageTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MKh-7n-Ygh"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="CFh-gh-czP">
-                                <rect key="frame" x="140" y="327" width="134" height="31"/>
-                                <subviews>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4uH-El-s45">
-                                        <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
-                                        <color key="onTintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </switch>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rounded" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQl-8c-9rm">
-                                        <rect key="frame" x="65" y="0.0" width="69" height="31"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="xVf-Qn-3fq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerXWithinMargins" id="270-kM-tjI"/>
-                            <constraint firstItem="CFh-gh-czP" firstAttribute="centerX" secondItem="mST-Jz-S2m" secondAttribute="centerX" id="M5m-LE-QSt"/>
+                            <constraint firstItem="vAv-rT-SAp" firstAttribute="centerX" secondItem="xVf-Qn-3fq" secondAttribute="centerX" id="P2O-7Z-vpu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xVf-Qn-3fq" secondAttribute="bottom" constant="16" id="Y7M-sO-Met"/>
-                            <constraint firstItem="CFh-gh-czP" firstAttribute="top" secondItem="mST-Jz-S2m" secondAttribute="bottom" constant="32" id="YPf-HR-btJ"/>
                             <constraint firstItem="xVf-Qn-3fq" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="ZLN-3B-Jcf"/>
+                            <constraint firstItem="CFh-gh-czP" firstAttribute="centerX" secondItem="mST-Jz-S2m" secondAttribute="centerX" id="bIO-gG-WPM"/>
+                            <constraint firstItem="xVf-Qn-3fq" firstAttribute="top" secondItem="vAv-rT-SAp" secondAttribute="bottom" constant="24" id="cGy-HV-nr3"/>
                             <constraint firstItem="mST-Jz-S2m" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.33" id="e5j-AZ-kcx"/>
                             <constraint firstItem="mST-Jz-S2m" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.5" id="eO2-LP-alN"/>
+                            <constraint firstItem="CFh-gh-czP" firstAttribute="top" secondItem="mST-Jz-S2m" secondAttribute="bottom" constant="24" id="fup-Zv-mI5"/>
                             <constraint firstItem="mST-Jz-S2m" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="s3V-t1-wHY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="cropSwitch" destination="3Mr-Mn-Xa9" id="PNP-sp-M5c"/>
                         <outlet property="frameView" destination="mST-Jz-S2m" id="NNs-Fc-D4g"/>
                         <outlet property="imageView" destination="AGd-fO-X3I" id="XYu-KL-ec6"/>
+                        <outlet property="roundedSwitch" destination="4uH-El-s45" id="bMn-ZP-JUZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

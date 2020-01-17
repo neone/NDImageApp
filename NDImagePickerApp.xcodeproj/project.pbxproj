@@ -46,7 +46,7 @@
 		D978F02C23D220130027938E /* Rotatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978EFF923D21A020027938E /* Rotatable.swift */; };
 		D978F02D23D220130027938E /* AngleAssist.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978EFFA23D21A020027938E /* AngleAssist.swift */; };
 		D978F02E23D220130027938E /* AspectRatioSettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978EFFB23D21A020027938E /* AspectRatioSettable.swift */; };
-		D978F03023D228C40027938E /* NDImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978F02F23D228C40027938E /* NDImagePickerViewController.swift */; };
+		D978F03023D228C40027938E /* NDImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978F02F23D228C40027938E /* NDImageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,7 +91,7 @@
 		D978F00C23D21A200027938E /* QCropper.flip.horizontal.fill@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QCropper.flip.horizontal.fill@3x.png"; sourceTree = "<group>"; };
 		D978F00D23D21A200027938E /* QCropper.flip.horizontal.fill@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QCropper.flip.horizontal.fill@2x.png"; sourceTree = "<group>"; };
 		D978F00E23D21B450027938E /* UIButtonX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonX.swift; sourceTree = "<group>"; };
-		D978F02F23D228C40027938E /* NDImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDImagePickerViewController.swift; sourceTree = "<group>"; };
+		D978F02F23D228C40027938E /* NDImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDImageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +127,7 @@
 				D962B11D23D1F03200FC5386 /* LaunchScreen.storyboard */,
 				D962B12923D1F4BD00FC5386 /* Example App */,
 				D962B12623D1F43900FC5386 /* Utilities */,
-				D978EF7823D219E70027938E /* NDImagePickerFramework */,
+				D978EF7823D219E70027938E /* NDImageManager */,
 			);
 			path = NDImagePickerApp;
 			sourceTree = "<group>";
@@ -166,13 +166,13 @@
 			path = QCropper;
 			sourceTree = "<group>";
 		};
-		D978EF7823D219E70027938E /* NDImagePickerFramework */ = {
+		D978EF7823D219E70027938E /* NDImageManager */ = {
 			isa = PBXGroup;
 			children = (
-				D978F02F23D228C40027938E /* NDImagePickerViewController.swift */,
+				D978F02F23D228C40027938E /* NDImageManager.swift */,
 				D978EF7723D219DF0027938E /* QCropper */,
 			);
-			path = NDImagePickerFramework;
+			path = NDImageManager;
 			sourceTree = "<group>";
 		};
 		D978EFE923D21A020027938E /* HelperExtensions */ = {
@@ -341,7 +341,7 @@
 				D978F02B23D220130027938E /* Flipable.swift in Sources */,
 				D978F02023D220020027938E /* TopBar.swift in Sources */,
 				D978F02523D2200F0027938E /* CropperState.swift in Sources */,
-				D978F03023D228C40027938E /* NDImagePickerViewController.swift in Sources */,
+				D978F03023D228C40027938E /* NDImageManager.swift in Sources */,
 				D978F02C23D220130027938E /* Rotatable.swift in Sources */,
 				D978F01C23D21FFD0027938E /* UIView+Helper.swift in Sources */,
 				D978F01B23D21FFD0027938E /* UIImage+Helper.swift in Sources */,
