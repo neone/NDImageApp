@@ -72,6 +72,9 @@
                                         <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="chooseImageTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MKh-7n-Ygh"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="CFh-gh-czP">
                                 <rect key="frame" x="140" y="327" width="134" height="31"/>
@@ -102,6 +105,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="frameView" destination="mST-Jz-S2m" id="NNs-Fc-D4g"/>
+                        <outlet property="imageInstrucitons" destination="YoK-aK-ASb" id="Rex-li-4IY"/>
+                        <outlet property="imageView" destination="AGd-fO-X3I" id="XYu-KL-ec6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
