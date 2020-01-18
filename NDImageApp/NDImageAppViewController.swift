@@ -11,6 +11,7 @@ import NDImageManager
 
 class NDImageAppViewController: UIViewController, NDImagePickerDelegate {
  
+ 
     //MARK: Variables and Outlets
     var isRounded = false
     var isEditable = false
@@ -52,8 +53,12 @@ class NDImageAppViewController: UIViewController, NDImagePickerDelegate {
         present(picker, animated: true, completion: nil)
     }
     
+    //NDImageManagerMethods
     func editedImageReturned(image: UIImage) {
         imageView.image = image
     }
     
+    func pickerCancelled() {
+     }
+     
 }
