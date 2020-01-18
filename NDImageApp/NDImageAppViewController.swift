@@ -53,7 +53,7 @@ class NDImageAppViewController: UIViewController, NDImagePickerDelegate {
         present(picker, animated: true, completion: nil)
     }
     
-    //NDImageManagerMethods
+    //NDImageManagerMethodsw
     func editedImageReturned(image: UIImage) {
         imageView.image = image
     }
