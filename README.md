@@ -44,7 +44,7 @@ Initial release
 
 ## Authors
 
-Dave Glassco, [dave@neone.com] (https://www.neone.com)
+Dave Glassco, [dave@neone.com] [Neone](https://www.neone.com)
 makomori, [makomori26@gmail.com], Twitter: [@makomori26](https://twitter.com/makomori26)
 Mark Moeykens, [Big Mountain Studio](https://www.bigmountainstudio.com)
 
