@@ -36,7 +36,7 @@ Initial release
 
 ## Authors
 
-Dave Glassco, [GitHub](https://github.com/neodave), [Neone](https://www.neone.com), Twitter: [@daveglassco](https://twitter.com/daveglassco)  
+Dave Glassco, [GitHub](https://github.com/neodave), Web: [Neone](https://www.neone.com), Twitter: [@daveglassco](https://twitter.com/daveglassco)  
 Makoto Mori, [GitHub](https://github.com/makomori),  Twitter: [@makomori26](https://twitter.com/makomori26)  
 Mark Moeykens, [GitHub](https://github.com/bigmountainstudio), Web: [Big Mountain Studio](https://www.bigmountainstudio.com)
 
