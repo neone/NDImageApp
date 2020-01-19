@@ -36,9 +36,9 @@ Initial release
 
 ## Authors
 
-Dave Glassco [Neone](https://www.neone.com), Twitter: [@daveglassco](https://twitter.com/daveglassco)  
-makomori, [makomori26@gmail.com], Twitter: [@makomori26](https://twitter.com/makomori26)  
-Mark Moeykens, [Big Mountain Studio](https://www.bigmountainstudio.com)
+Dave Glassco, [Neone](https://www.neone.com), Twitter: [@daveglassco](https://twitter.com/daveglassco)  
+Makoto Mori, [GitHub](https://github.com/makomori),  Twitter: [@makomori26](https://twitter.com/makomori26)  
+Mark Moeykens, [GitHub](https://github.com/bigmountainstudio) [Big Mountain Studio](https://www.bigmountainstudio.com)
 
 ## License
 
