@@ -17,8 +17,8 @@
 		D962B11F23D1F03200FC5386 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D962B11D23D1F03200FC5386 /* LaunchScreen.storyboard */; };
 		D978EF7523D211B40027938E /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D962B12723D1F45E00FC5386 /* UIViewX.swift */; };
 		D978F00F23D21B450027938E /* UIButtonX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978F00E23D21B450027938E /* UIButtonX.swift */; };
-		D9970A3D23D489B800B45A09 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D9970A3B23D489B800B45A09 /* README.md */; };
-		D9970A3E23D489B800B45A09 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = D9970A3C23D489B800B45A09 /* LICENSE.md */; };
+		D9DFADFF23D48B0B0082488B /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = D9DFADFD23D48B0B0082488B /* LICENSE.md */; };
+		D9DFAE0023D48B0B0082488B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D9DFADFE23D48B0B0082488B /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,8 +33,8 @@
 		D962B12023D1F03200FC5386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D962B12723D1F45E00FC5386 /* UIViewX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewX.swift; sourceTree = "<group>"; };
 		D978F00E23D21B450027938E /* UIButtonX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonX.swift; sourceTree = "<group>"; };
-		D9970A3B23D489B800B45A09 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../../../../Desktop/NDImage/NDImageApp/README.md; sourceTree = "<group>"; };
-		D9970A3C23D489B800B45A09 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = LICENSE.md; path = ../../../../../Desktop/NDImage/NDImageApp/LICENSE.md; sourceTree = "<group>"; };
+		D9DFADFD23D48B0B0082488B /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = SOURCE_ROOT; };
+		D9DFADFE23D48B0B0082488B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +74,8 @@
 				D962B11D23D1F03200FC5386 /* LaunchScreen.storyboard */,
 				D962B11823D1F03100FC5386 /* Main.storyboard */,
 				D962B12023D1F03200FC5386 /* Info.plist */,
-				D9970A3C23D489B800B45A09 /* LICENSE.md */,
-				D9970A3B23D489B800B45A09 /* README.md */,
+				D9DFADFD23D48B0B0082488B /* LICENSE.md */,
+				D9DFADFE23D48B0B0082488B /* README.md */,
 				D962B11B23D1F03200FC5386 /* Assets.xcassets */,
 				D93D40E923D27EDC007AE33C /* NDImageManagerAssets.xcassets */,
 				D962B12623D1F43900FC5386 /* Utilities */,
@@ -156,11 +156,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9DFAE0023D48B0B0082488B /* README.md in Resources */,
+				D9DFADFF23D48B0B0082488B /* LICENSE.md in Resources */,
 				D93D40EA23D27EDC007AE33C /* NDImageManagerAssets.xcassets in Resources */,
 				D962B11F23D1F03200FC5386 /* LaunchScreen.storyboard in Resources */,
-				D9970A3D23D489B800B45A09 /* README.md in Resources */,
 				D962B11C23D1F03200FC5386 /* Assets.xcassets in Resources */,
-				D9970A3E23D489B800B45A09 /* LICENSE.md in Resources */,
 				D962B11A23D1F03100FC5386 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
