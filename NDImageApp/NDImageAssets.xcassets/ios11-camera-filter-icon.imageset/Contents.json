@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "cylonProfile.jpeg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "ios11-camera-filter-icon.png",
       "scale" : "2x"
     },
     {
