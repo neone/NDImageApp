@@ -14,14 +14,14 @@ class NDImageAppViewController: UIViewController, NDImagePickerDelegate {
  
     //MARK: Variables and Outlets
     var isRounded = false
-    var isEditable = false
+    var isEditable = true
     
     
     @IBOutlet weak var frameView: UIViewX!
     @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var roundedSwitch: UISwitch!
-    @IBOutlet weak var cropSwitch: UISwitch!
+    @IBOutlet weak var editSwitch: UISwitch!
     
     //MARK: - Initializers and Actions
     override func viewDidLoad() {
@@ -39,12 +39,18 @@ class NDImageAppViewController: UIViewController, NDImagePickerDelegate {
         }
     }
     
+    @IBAction func showEditingChanged(_ sender: Any) {
+        if editSwitch.isOn {
+            isEditable = true
+        } else {
+            isEditable = false
+        }
+    }
+    
+    
     @IBAction func chooseImageTapped(_ sender: Any) {
         if roundedSwitch.isOn {
             isRounded = true
-        }
-        if cropSwitch.isOn {
-            isEditable = true
         }
         
         let picker = NDImageManager()
