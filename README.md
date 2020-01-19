@@ -8,14 +8,6 @@ Preview the great functionality of the NDImageManager framework with this exampl
 
 NDImageManager, (https://github.com/neone/NDImageManager)
 
-
-#### Build Status
-
-| Branch  | Build Status |
-| ------------- | ------------- |
-| Develop  | [![Build Status](https://travis-ci.org/ayushn21/AvatarImageView.svg?branch=develop)](https://travis-ci.org/ayushn21/AvatarImageView)|
-| Master  | [![Build Status](https://travis-ci.org/ayushn21/AvatarImageView.svg?branch=master)](https://travis-ci.org/ayushn21/AvatarImageView)|
-
 ## Description
 
 ## Usage
@@ -35,7 +27,7 @@ NDAvatarApp requires at least iOS 12.
 
 ## Installation
 
-To install the NDManager in your framework simply add it to the Swift Packages of your project settings. No pods, no command line tools. Just a Swift Package :)
+To install the NDImageManager framework in your app simply add it to the Swift Packages of your project settings. No pods, no command line tools. Just a Swift Package :)
 
 ## Release Notes
 
@@ -50,4 +42,4 @@ Mark Moeykens, [Big Mountain Studio](https://www.bigmountainstudio.com)
 
 ## License
 
-NDAvatarView is available under the MIT license. See the LICENSE.md file for more info.
+The NDImageApp is available under the MIT license. See the LICENSE.md file for more info.
