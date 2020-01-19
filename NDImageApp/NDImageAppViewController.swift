@@ -55,7 +55,7 @@ class NDImageAppViewController: UIViewController, NDImagePickerDelegate {
         
         let picker = NDImageManager()
         picker.imagePickerDelegate = self
-        picker.setUpImageManager(editable: isEditable, rounded: isRounded)
+        picker.setUpImageManager(pickImage: true, editable: isEditable, rounded: isRounded)
         present(picker, animated: true, completion: nil)
     }
     
