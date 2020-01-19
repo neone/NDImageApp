@@ -6,6 +6,9 @@
 
 Preview the great functionality of the NDImageManager framework with this example app. NDImageManager is a Swift framework for selecting and editing images in a consistent and easy way. This app utilizes the NDImageManager framework as a Swift Package pulled directly from its repository. The NDImageManager framework is also open source and available under the MIT License 
 
+NDImageManager, (https://github.com/neone/NDImageManager)
+
+
 #### Build Status
 
 | Branch  | Build Status |
