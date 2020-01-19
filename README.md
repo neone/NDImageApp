@@ -28,9 +28,11 @@ Please refer to the example project in this repository as an implementation of t
 
 ## Requirements
 
-AvatarImageView requires at least iOS 12.
+NDAvatarApp requires at least iOS 12.
 
 ## Installation
+
+To install the NDManager in your framework simply add it to the Swift Packages of your project settings. No pods, no command line tools. Just a Swift Package :)
 
 ## Release Notes
 
