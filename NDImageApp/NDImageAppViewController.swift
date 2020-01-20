@@ -22,11 +22,14 @@ class NDImageAppViewController: UIViewController, NDImagePickerDelegate {
     
     @IBOutlet weak var roundedSwitch: UISwitch!
     @IBOutlet weak var editSwitch: UISwitch!
+    @IBOutlet weak var editImageButton: UIButtonX!
     
     //MARK: - Initializers and Actions
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    
     
     @IBAction func roundedSwitchChanged(_ sender: Any) {
         if roundedSwitch.isOn {
@@ -47,6 +50,15 @@ class NDImageAppViewController: UIViewController, NDImagePickerDelegate {
         }
     }
     
+    @IBAction func editTapped(_ sender: Any) {
+        if let editImage = imageView.image {
+            let picker = NDImageManager()
+            picker.imagePickerDelegate = self
+            picker.setUpImageManager(pickImage: false, editable: isEditable, image: editImage, rounded: isRounded)
+            present(picker, animated: true, completion: nil)
+        }
+        
+    }
     
     @IBAction func chooseImageTapped(_ sender: Any) {
         if roundedSwitch.isOn {
@@ -62,6 +74,10 @@ class NDImageAppViewController: UIViewController, NDImagePickerDelegate {
     //NDImageManagerMethodsw
     func editedImageReturned(image: UIImage) {
         imageView.image = image
+        editImageButton.borderColor = UIColor.systemOrange
+        editImageButton.setTitleColor(UIColor.systemOrange, for: .normal)
+        editImageButton.isEnabled = true
+        
     }
     
     func pickerCancelled() {

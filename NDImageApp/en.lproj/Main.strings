@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "Show Editing"; ObjectID = "Jug-or-GTv"; */
+"Jug-or-GTv.text" = "Show Editing";
+
+/* Class = "UIButton"; normalTitle = "Edit Selected Image"; ObjectID = "bTw-f7-zO3"; */
+"bTw-f7-zO3.normalTitle" = "Edit Selected Image";
+
+/* Class = "UILabel"; text = "Rounded"; ObjectID = "xQl-8c-9rm"; */
+"xQl-8c-9rm.text" = "Rounded";
+
+/* Class = "UIButton"; normalTitle = "Choose Image"; ObjectID = "xVf-Qn-3fq"; */
+"xVf-Qn-3fq.normalTitle" = "Choose Image";
