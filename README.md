@@ -14,7 +14,7 @@ The NDImageApp is an example app for the NDImageManager framework. NDImageManage
 
 Picking images
 
-![BannerImage](./Images/Screenshot1.png)   ![BannerImage](./Images/Screenshot2.png)  ![BannerImage](./Images/Screenshot6.png)
+![BannerImage](./Images/Screenshot1.png)   ![BannerImage](./Images/Screenshot2.png)  ![BannerImage](./Images/Screenshot7.png)
 
 Editing Images
 
