@@ -12,8 +12,11 @@ Preview the great functionality of the NDImageManager framework with this exampl
 
 The NDImageApp is an example app for the NDImageManager framework. NDImageManager consists of three primary functions, selecting images, editing images, and applying filters to images. It can also be provide an image in order to simply utilize the editing and/or available filters
 
+Picking images
+![BannerImage](./Images/Screenshot1.png)   ![BannerImage](./Images/Screenshot2.png)  ![BannerImage](./Images/Screenshot6.png)
 
-![BannerImage](./Images/Screenshot1.png)   ![BannerImage](./Images/Screenshot2.png)  ![BannerImage](./Images/Screenshot3.png) ![BannerImage](./Images/Screenshot4.png)   ![BannerImage](./Images/Screenshot5.png)
+Editing Images
+![BannerImage](./Images/Screenshot3.png) ![BannerImage](./Images/Screenshot4.png)   ![BannerImage](./Images/Screenshot5.png)
 
 
 
