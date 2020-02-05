@@ -9,7 +9,7 @@
 import UIKit
 import NDImageManager
 
-class NDImageAppViewController: UIViewController, NDImagePickerDelegate {
+class NDImageAppViewController: UIViewController, NDImageManagerDelegate {
  
  
     //MARK: Variables and Outlets
@@ -72,7 +72,7 @@ class NDImageAppViewController: UIViewController, NDImagePickerDelegate {
     }
     
     //NDImageManagerMethodsw
-    func editedImageReturned(image: UIImage) {
+    func imageReturned(image: UIImage) {
         imageView.image = image
         editImageButton.borderColor = UIColor.systemOrange
         editImageButton.setTitleColor(UIColor.systemOrange, for: .normal)
@@ -81,6 +81,7 @@ class NDImageAppViewController: UIViewController, NDImagePickerDelegate {
     }
     
     func pickerCancelled() {
+        print("Picker Dismissed")
      }
      
 }

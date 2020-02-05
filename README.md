@@ -10,20 +10,49 @@ Preview the great functionality of the NDImageManager framework with this exampl
 
 ## Description
 
+The NDImageApp is an example app for the NDImageManager framework. NDImageManager consists of three primary functions, selecting images, editing images, and applying filters to images. It can also be provide an image in order to simply utilize the editing and/or available filters
+
+
+![BannerImage](./Images/Screenshot1.png)   ![BannerImage](./Images/Screenshot2.png)  ![BannerImage](./Images/Screenshot3png) ![BannerImage](./Images/Screenshot4.png)   ![BannerImage](./Images/Screenshot5.png)
+
+
+
 ## Usage
 
+On the code side of things make sure to import the framework into your Swift file,  and set you ViewController as an NDImageManagerDelegate
 
-#### NDAvatarApp Project
+```swift
+    import NDMageManager
+    
+    class NDImageAppViewController: UIViewController, NDImageManagerDelegate {}
+```
 
-Please refer to the example project in this repository as an implementation of the framework. If you find any bugs, open a GitHub issue!
+In the example app we configure the manager as both a picker and editor and call it like this.
 
+```swift
+    let picker = NDImageManager()
+    picker.imagePickerDelegate = self
+    picker.setUpImageManager(pickImage: false, editable: isEditable, image: editImage, rounded: isRounded)
+    present(picker, animated: true, completion: nil)
+```
 
-## Documentation
+And finally you will need to implement the protocol delegates
+
+```
+swift
+    public protocol NDImageManagerDelegate {
+        func imageReturned(image: UIImage)
+        func pickerCancelled()
+    }
+
+```
+
+ If you find any bugs, open a GitHub issue!
 
 
 ## Requirements
 
-NDAvatarApp requires at least iOS 12.
+NDImageApp requires at least iOS 13.
 
 ## Installation
 
