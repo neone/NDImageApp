@@ -8,6 +8,10 @@ Preview the great functionality of the NDImageManager framework with this exampl
 
 [NDImageManager](https://github.com/neone/NDImageManager)
 
+If you are looking for an easy way to display user images you might want to check out our companion framework NDAvatar.
+
+[NDAvatarApp](https://github.com/neone/NDAvatarApp)
+
 ## Description
 
 The NDImageApp is an example app for the NDImageManager framework. NDImageManager consists of three primary functions, selecting images, editing images, and applying filters to images. It can also be provide an image in order to simply utilize the editing and/or available filters
