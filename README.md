@@ -1,7 +1,7 @@
 ![BannerImage](./Images/NDImageGitHubBanner.png)
 
 [![MIT License](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
-[![Swift Version](https://img.shields.io/badge/Language-Swift%202.2,%202.3,%203,%204%20&%205-orange.svg)](https://developer.apple.com/swift)
+[![Swift Version](https://img.shields.io/badge/Language-Swift%205-orange.svg)](https://developer.apple.com/swift)
 
 
 Preview the great functionality of the NDImageManager framework with this example app. NDImageManager is a Swift framework for selecting and editing images in a consistent and easy way. This app installs the framework as a Swift Package automatically, pulled directly from its repository. The NDImageManager framework is also open source and available under the MIT License 
